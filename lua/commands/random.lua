@@ -4,6 +4,4 @@ local function random(ply, str, args, team)
     return ""
 end
 
-print("Loaded \"random\" command.")
-
 AAWNN.Commands.random = random

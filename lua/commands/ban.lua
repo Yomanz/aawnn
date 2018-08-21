@@ -22,6 +22,4 @@ Reason given: %s]], ply:GetName(), reason))
     return ""
 end
 
-print("Loaded \"ban\" command.")
-
 AAWNN.Commands.ban = ban

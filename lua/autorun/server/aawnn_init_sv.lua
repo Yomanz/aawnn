@@ -56,4 +56,7 @@ local cmdfiles = {
 
 for _,i in pairs(cmdfiles) do
     include("commands/"..i..".lua")
+    print("[AAWNN] Loaded "..i.." command.")
 end
+
+print("AAWNN loaded successfully.")

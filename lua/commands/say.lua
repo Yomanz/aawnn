@@ -3,6 +3,4 @@ local function say(ply, str, args, team)
     return s
 end
 
-print("Loaded \"say\" command.")
-
 AAWNN.Commands.say = say

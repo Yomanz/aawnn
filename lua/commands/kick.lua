@@ -18,6 +18,4 @@ local function kick(ply, str, args, team)
     return ""
 end
 
-print("Loaded \"kick\" command.")
-
 AAWNN.Commands.kick = kick
