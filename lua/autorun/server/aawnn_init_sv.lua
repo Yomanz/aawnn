@@ -45,6 +45,15 @@ function AAWNN_EventChat(ply, text, team)
     end
 end
 
-print("AAWNN loaded.")
-
 hook.Add("PlayerSay", "AAWNNChatEvt", AAWNN_EventChat)
+
+local cmdfiles = {
+    'ban',
+    'kick',
+    'random',
+    'say'
+}
+
+for _,i in pairs(cmdfiles) do
+    include("commands/"..i..".lua")
+end
