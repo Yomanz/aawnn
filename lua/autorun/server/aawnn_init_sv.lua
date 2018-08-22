@@ -9,6 +9,12 @@ AAWNN.Prefix = "-"
 
 AAWNN.Commands = {}
 
+function AAWNN:IsAdmin(name)
+    if name == "ry00001" then
+        return true -- !!!!!!!!!!!!! VERY TEMPORARY
+    end
+end
+
 function AAWNN:GetPlayer(name) 
     name = string.lower(name)
     for _,v in ipairs(player.GetAll()) do

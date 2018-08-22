@@ -1,5 +1,5 @@
 local function kick(ply, str, args, team)
-    if not ply:IsAdmin() then
+    if not AAWNN:IsAdmin(ply:Name()) then
         ply:ChatPrint("You are not admin.")
         return ""
     end

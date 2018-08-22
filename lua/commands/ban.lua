@@ -1,5 +1,5 @@
 local function ban(ply, str, args, team)
-    if not ply:IsAdmin() then
+    if not AAWNN:IsAdmin(ply:Name()) then
         ply:ChatPrint("You are not admin.")
         return ""
     end
@@ -16,7 +16,7 @@ local function ban(ply, str, args, team)
     end
     target:Ban(time)
     target:Kick(string.format([[--== BANNED ==--
-You were banned by %s
+You were banned by %s.
 Reason given: %s]], ply:GetName(), reason))
     AAWNN:GlobalChat(string.format([[%s banned %s (%s)]], ply:GetName(), target:GetName(), reason))
     return ""
