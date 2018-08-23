@@ -1,0 +1,12 @@
+{
+    "title": "AAWNN",
+    "type": "ServerContent",
+    "tags": [""],
+    "ignore": [
+        ".git*",
+        "LICENCE.md",
+        "README.md",
+        "CHANGELOG.md"
+    ],
+    "workshopid": 1
+}
